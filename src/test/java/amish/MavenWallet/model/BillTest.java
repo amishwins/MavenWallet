@@ -1,11 +1,11 @@
 package amish.MavenWallet.model;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
+import static org.junit.Assert.*;
 
 import org.junit.Test;
 
 public class BillTest {
+	Bill b = new Bill(5);
 
 	@Test
 	public void test() {
@@ -14,7 +14,7 @@ public class BillTest {
 	
 	@Test
 	public void failingTest() {
-		fail("This hasn't been implemented yet.");
+		assertEquals(5, b.getValue());
 	}
 
 }
