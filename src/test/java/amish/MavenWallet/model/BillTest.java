@@ -13,7 +13,7 @@ public class BillTest {
 	}
 	
 	@Test
-	public void failingTest() {
+	public void billWithFiveGetsFiveBack() {
 		assertEquals(5, b.getValue());
 	}
 
